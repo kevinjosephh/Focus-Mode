@@ -1,13 +1,14 @@
-// Create context menu for adding current site to the block list
+// function called when extension is installed initially
+// Create context menu (i.e. right-click menu) for adding current site to the block list
 chrome.runtime.onInstalled.addListener(function () {
   chrome.contextMenus.create({
     id: "addToBlockList",
     title: "Add to Block List",
-    contexts: ["page"],
+    contexts: ["page"], // page meaning currnt site
   });
 });
 
-// Handle context menu click
+// when context menu clicked
 chrome.contextMenus.onClicked.addListener(function (info, tab) {
   if (info.menuItemId === "addToBlockList") {
     const site = new URL(tab.url).hostname; // Get the hostname
