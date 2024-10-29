@@ -1,37 +1,69 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 10px;
-    max-width: 300px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #1a1a2e, #16213e); /* Dark Gradient Background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    backdrop-filter: blur(15px); /* Glassmorphism effect */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    width: 100%;
+    max-width: 400px; /* Responsive max width */
 }
 
 h1 {
-    font-size: 1.5em;
-    color: #333;
+    font-size: 2em;
+    color: #ffffff; /* White text for header */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-top: 20px;
+    color: #ffffff; /* White text for subheader */
+}
+
+label {
+    color: #ffffff; /* White text for label */
 }
 
 input[type="text"] {
-    width: calc(100% - 22px);
-    padding: 5px;
-    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2); /* Darker input background */
+    color: #ffffff; /* White text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Darker shadow */
 }
 
 button {
     background-color: #4CAF50; /* Green */
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
     margin: 5px 0;
+    width: 100%; /* Full width */
+    font-size: 1em;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Darker green on hover */
 }
 
 ul {
@@ -41,11 +73,18 @@ ul {
 
 li {
     padding: 5px 0;
+    color: #ffffff; /* White text for list items */
 }
 
 footer {
     margin-top: 20px;
     font-size: 0.9em;
-    color: #777;
+    color: #ffffff; /* White text for footer */
     text-align: center;
+}
+
+/* Add a hover effect on the list items */
+li:hover {
+    color: #4CAF50; /* Green on hover */
+    transition: color 0.3s ease;
 }

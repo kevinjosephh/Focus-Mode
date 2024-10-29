@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Focus Mode</title>
-    <script src="popup.js"></script>
-  </head>
-  <body>
-    <h1>Focus Mode</h1>
-    <label> <input type="checkbox" id="focus-toggle" /> Focus Mode </label>
-    <br />
-    <input type="text" id="website-input" placeholder="Enter website URL" />
-    <button id="add-website-btn">Add to Block List</button>
-    <ul id="block-list"></ul>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+    <script src="popup.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <img src="focus-icon.png" alt="Focus Icon" style="width: 40px; margin-bottom: 20px;" /> <!-- Image -->
+        <h1>Focus Mode</h1>
+        <label><input type="checkbox" id="focus-toggle" /> Focus Mode </label>
+        <br />
+        <input type="text" id="website-input" placeholder="Enter website URL" />
+        <button id="add-website-btn">Add to Block List</button>
+        <ul id="block-list"></ul>
 
-    <h2>Take a Break</h2>
-    <button id="break-5">5 Minutes</button>
-    <button id="break-15">15 Minutes</button>
-    <button id="break-30">30 Minutes</button>
-  </body>
+        <h2>Take a Break</h2>
+        <button id="break-5">5 Minutes</button>
+        <button id="break-15">15 Minutes</button>
+        <button id="break-30">30 Minutes</button>
+    </div>
+    <footer>© 2024 Focus Mode</footer>
+</body>
 </html>
